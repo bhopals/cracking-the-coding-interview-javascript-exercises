@@ -11,11 +11,7 @@ function palinPerm(str) {
   for (let i = 0; i < str.length; i++) {
     const val = str[i];
     if (val.trim() !== "") {
-      if (obj[val] !== undefined) {
-        obj[val] = obj[val] + 1;
-      } else {
-        obj[val] = 1;
-      }
+      obj[val] = obj[val] + 1 || 1;
     }
   }
   console.log(obj);
