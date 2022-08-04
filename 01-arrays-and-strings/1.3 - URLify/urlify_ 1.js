@@ -5,8 +5,13 @@
  * and that you are given the "true" length of the string.
  *
  */
-function urlify(value) {
-  return value.trim().replaceAll(" ", "%20");
+function urlify(value, len) {
+  for (var i = 0; i < len; i++) {
+    if (value[i] === " ") {
+      value[i] = "%20";
+    }
+  }
+  return value;
 }
 
 /* TESTS */
