@@ -4,7 +4,15 @@
  * What if you cannot use additional data structures?
  */
 function everyCharUnique(value) {
-  return new Set(value).size === value.length;
+  const obj = {};
+  const strArr = value.split("");
+  for (const str of strArr) {
+    if (obj[str]) {
+      return false;
+    }
+    obj[str] = true;
+  }
+  return true;
 }
 
 /* TESTS */
