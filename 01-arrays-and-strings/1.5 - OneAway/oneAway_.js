@@ -16,7 +16,7 @@ function oneAway(str1, str2) {
       for (let i = 0; i < str2.length; i++) {}
     }
 
-    console.log("isInsert>>>>:", response);
+    console.log("isInsert>:", response);
     return response;
   }
   function isReplace() {
