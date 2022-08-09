@@ -22,13 +22,13 @@ function oneAway(str1, str2) {
   function isReplace() {
     let response = false;
 
-    console.log("isReplace:", response);
+    console.log("isReplace::", response);
     return response;
   }
   function isDelete() {
     let response = false;
 
-    console.log("isDelete:", response);
+    console.log("isDelete::", response);
     return response;
   }
 
