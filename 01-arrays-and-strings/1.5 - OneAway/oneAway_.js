@@ -35,7 +35,7 @@ function oneAway(str1, str2) {
   return isInsert() && isReplace() && isDelete();
 }
 
-/*** TEST */
+/*** TEST ***/
 console.log(oneAway("pale", "ple"), true);
 console.log(oneAway("pales", "pale"), true);
 console.log(oneAway("pale", "bale"), true);
